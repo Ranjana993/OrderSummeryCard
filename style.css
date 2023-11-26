@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Jost:wght@200;400&family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@1,700&family=Poppins:ital,wght@0,300;0,400;1,400&family=Red+Hat+Display:ital,wght@0,700;0,900;1,500&family=Roboto:wght@300&family=Urbanist:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bungee Spice', sans-serif;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+}
+
+:root {
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%)
+}
+
+
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--Darkblue);
+    margin-top: 2rem;
+    font-weight: 900;
+}
+
+p {
+    color: var(--Desaturatedblue);
+    margin: 1rem 0 1rem 0;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+body {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.wrapper {
+    background-color: white;
+    margin: auto;
+    margin-top: 3rem;
+    width: 25%;
+    max-width: 33rem;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.card_info,
+.plan,
+.btns_grp {
+    padding: 0 2rem 0 2rem;
+}
+
+.plan {
+    margin: 2rem 0 2rem 0;
+
+}
+
+.plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plans:nth-child(1) {
+    color: var(--Darkblue);
+}
+
+.plans:nth-child(2) {
+    color: var(--Desaturatedblue);
+}
+
+.right_component h4 {
+    color: rgb(4, 0, 128);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.btns_grp p {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+button {
+    background-color: var(--Brightblue);
+    color: white;
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 45px;
+    font-weight: 900;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .wrapper {
+        width: 40%;
+        max-width: 45rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .wrapper {
+        width: 50%;
+        /* max-width: 45rem; */
+    }
+}
+
+
+@media only screen and (max-width: 756px) {
+    .wrapper {
+        width: 70%;
+        /* max-width: 45rem; */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        width: 90%;
+        /* max-width: 45rem; */
+    }
+}
